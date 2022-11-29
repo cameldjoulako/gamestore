@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gamestore/constants/colors.dart';
+import 'package:gamestore/utils/colors.dart';
 import 'package:gamestore/pages/home/widgets/header.dart';
 import 'package:gamestore/pages/home/widgets/search.dart';
 

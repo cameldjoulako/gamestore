@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gamestore/constants/colors.dart';
+import 'package:gamestore/utils/colors.dart';
 
 class SearchSection extends StatelessWidget {
   const SearchSection({super.key});
@@ -13,9 +13,49 @@ class SearchSection extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          TextFormField(
+          TextField(
             cursorColor: primaryColor,
+            decoration: InputDecoration(
+              fillColor: const Color(0xFFF6F8FF),
+              filled: true,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide: const BorderSide(
+                  width: 0,
+                  style: BorderStyle.none,
+                ),
+              ),
+              contentPadding: const EdgeInsets.symmetric(
+                horizontal: 20,
+                vertical: 20,
+              ),
+              prefixIcon: const Icon(
+                Icons.search_outlined,
+                size: 30,
+              ),
+              hintText: "Search game",
+              hintStyle: TextStyle(
+                fontSize: 14,
+                color: Colors.grey.withOpacity(0.7),
+              ),
+            ),
           ),
+          Positioned(
+            bottom: 10,
+            right: 12,
+            child: Container(
+              padding: const EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: primaryColor,
+              ),
+              child: const Icon(
+                Icons.mic_outlined,
+                color: Colors.white,
+                size: 25,
+              ),
+            ),
+          )
         ],
       ),
     );
