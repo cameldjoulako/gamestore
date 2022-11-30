@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gamestore/pages/home/widgets/newest.dart';
+import 'package:gamestore/pages/home/widgets/popular.dart';
 
 class CategorySection extends StatelessWidget {
   CategorySection({super.key});
@@ -82,6 +84,7 @@ class CategorySection extends StatelessWidget {
               ),
             ),
           ),
+          PopularGame(),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 25),
             width: 410,
@@ -93,6 +96,7 @@ class CategorySection extends StatelessWidget {
               ),
             ),
           ),
+          NewestGame(),
         ],
       ),
     );

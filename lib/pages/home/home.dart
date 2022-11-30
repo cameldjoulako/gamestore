@@ -3,7 +3,6 @@ import 'package:gamestore/pages/home/widgets/category.dart';
 import 'package:gamestore/utils/colors.dart';
 import 'package:gamestore/pages/home/widgets/header.dart';
 import 'package:gamestore/pages/home/widgets/search.dart';
-import 'package:gamestore/pages/home/widgets/category.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

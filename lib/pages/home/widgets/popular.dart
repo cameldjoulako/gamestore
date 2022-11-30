@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gamestore/models/game.dart';
 
-class PopularGameSection extends StatelessWidget {
-  PopularGameSection({super.key});
+class PopularGame extends StatelessWidget {
+  PopularGame({super.key});
 
   final List<Game> games = Game.games();
 
@@ -23,6 +23,13 @@ class PopularGameSection extends StatelessWidget {
           ),
           child: Container(
             padding: const EdgeInsets.all(5),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(15),
+              child: Image.asset(games[index].bgImage),
+            ),
           ),
         ),
         separatorBuilder: (context, index) => const SizedBox(width: 10),
