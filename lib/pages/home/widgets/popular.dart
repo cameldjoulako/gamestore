@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gamestore/models/game.dart';
+import 'package:gamestore/pages/detail/detail.dart';
 
 class PopularGame extends StatelessWidget {
   PopularGame({super.key});
@@ -16,19 +17,26 @@ class PopularGame extends StatelessWidget {
           vertical: 20,
         ),
         scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) => Card(
-          elevation: 5,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15),
+        itemBuilder: (context, index) => GestureDetector(
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const DetailPage(),
+            ),
           ),
-          child: Container(
-            padding: const EdgeInsets.all(5),
-            decoration: BoxDecoration(
+          child: Card(
+            elevation: 5,
+            shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
             ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(15),
-              child: Image.asset(games[index].bgImage),
+            child: Container(
+              padding: const EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Image.asset(games[index].bgImage),
+              ),
             ),
           ),
         ),
