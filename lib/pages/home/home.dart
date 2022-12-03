@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:gamestore/pages/home/widgets/category.dart';
-import 'package:gamestore/utils/colors.dart';
 import 'package:gamestore/pages/home/widgets/header.dart';
 import 'package:gamestore/pages/home/widgets/search.dart';
 
@@ -12,7 +11,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primaryColor,
+      backgroundColor: const Color(0xFF5F67EA),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -69,7 +68,7 @@ class HomePage extends StatelessWidget {
           ),
           child: BottomNavigationBar(
             // backgroundColor: Colors.white,
-            selectedItemColor: primaryColor,
+            selectedItemColor: const Color(0xFF5F67EA),
             selectedFontSize: 12,
             unselectedFontSize: 12,
             unselectedItemColor: Colors.grey.withOpacity(0.7),

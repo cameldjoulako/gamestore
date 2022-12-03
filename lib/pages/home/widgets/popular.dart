@@ -20,7 +20,7 @@ class PopularGame extends StatelessWidget {
         itemBuilder: (context, index) => GestureDetector(
           onTap: () => Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (context) => const DetailPage(),
+              builder: (context) => DetailPage(games[index]),
             ),
           ),
           child: Card(

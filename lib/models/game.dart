@@ -31,7 +31,7 @@ class Game {
         4.8,
         382,
         324,
-        "Ori is stranger to peril, but when a fateful flight puts the owlet ku in har'ms way.",
+        "Ori is stranger to peril, but when a fateful flight puts the owlet ku in har'ms way.Ori is stranger to peril, but when a fateful flight puts the owlet ku in har'ms way.Ori is stranger to peril, but when a fateful flight puts the owlet ku in har'ms way.",
         [
           'assets/images/ori2.jpg',
           'assets/images/ori3.jpg',
@@ -46,7 +46,7 @@ class Game {
         4.7,
         226,
         148,
-        "Ori is stranger to peril, but when a fateful flight puts the owlet ku in har'ms way.",
+        "Rayman is stranger to peril, but when a fateful flight puts the owlet ku in har'ms way.Ori is stranger to peril, but when a fateful flight puts the owlet ku in har'ms way.Ori is stranger to peril, but when a fateful flight puts the owlet ku in har'ms way.",
         [
           'assets/images/rl2.jpg',
           'assets/images/rl3.jpg',

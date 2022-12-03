@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gamestore/models/game.dart';
-import 'package:gamestore/utils/colors.dart';
 
 class NewestGame extends StatelessWidget {
   NewestGame({super.key});
@@ -96,7 +95,7 @@ class NewestGame extends StatelessWidget {
                                   horizontal: 15,
                                 ),
                                 decoration: BoxDecoration(
-                                  color: primaryColor,
+                                  color: const Color(0xFF5F67EA),
                                   borderRadius: BorderRadius.circular(15),
                                 ),
                                 child: const Text(

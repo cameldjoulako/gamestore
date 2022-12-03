@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gamestore/utils/colors.dart';
 
 class SearchSection extends StatelessWidget {
   const SearchSection({super.key});
@@ -14,7 +13,7 @@ class SearchSection extends StatelessWidget {
       child: Stack(
         children: [
           TextField(
-            cursorColor: primaryColor,
+            cursorColor: const Color(0xFF5F67EA),
             decoration: InputDecoration(
               fillColor: const Color(0xFFF6F8FF),
               filled: true,
@@ -47,7 +46,7 @@ class SearchSection extends StatelessWidget {
               padding: const EdgeInsets.all(5),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: primaryColor,
+                color: const Color(0xFF5F67EA),
               ),
               child: const Icon(
                 Icons.mic_outlined,
